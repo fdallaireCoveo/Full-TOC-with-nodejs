@@ -1,0 +1,40 @@
+.CoveoSearchInterface {
+  .CoveoEmailActions {
+    padding-bottom: 10px;
+
+    .CoveoEmailAction {
+      background: #f7f7f7;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 15px;
+      border: 1px solid #cccccc;
+      padding: 3px;
+      background-color: #f7f7f7;
+      font-size: 15px;
+      color: #8f8f8f;
+      border-radius: 3px;
+    }
+
+    .coveo-wait-animation {
+      background-image: url("../image/sprites.png");
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin-top: 12px;
+      margin: 1px 5px -2px -2px;
+      position: relative;
+      width: 16px;
+      height: 16px;
+      @include animation-name(coveo-spin);
+      @include animation-timing-function(linear);
+      @include animation-duration(1s);
+      @include animation-iteration-count(infinite);
+      background-position: -208px -199px;
+      width: 16px;
+      height: 16px;
+      text-indent: 16px;
+    }
+  }
+}

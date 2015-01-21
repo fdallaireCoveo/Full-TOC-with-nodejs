@@ -1,0 +1,6 @@
+.topic,
+#SearchContainer.container-fluid, #MainSection.container-fluid,
+#ohHeader .container-fluid {
+    max-width: none;
+}
+

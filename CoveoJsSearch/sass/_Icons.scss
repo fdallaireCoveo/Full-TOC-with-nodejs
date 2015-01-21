@@ -1,0 +1,308 @@
+@mixin CoveoObjectTypeIcons(){
+  &.objecttype {
+    @extend .coveo-sprites-documentType-default;
+    &.Thread {
+      @extend .coveo-sprites-documentType-text;
+    }
+    &.People {
+      @extend .coveo-sprites-documentType-user;
+    }
+    &.Message{
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.Topic{
+      @extend .coveo-sprites-documentType-topic;
+    }
+    &.KBDocumentation{
+      @extend .coveo-sprites-documentType-kb;
+    }
+    &.KBSolution{
+      @extend .coveo-sprites-documentType-answer;
+    }
+    &.KBKnowledgeArticle{
+      @extend .coveo-sprites-documentType-kb;
+    }
+    &.Board{
+      @extend .coveo-sprites-documentType-comment;
+    }
+    &.Site{
+      @extend .coveo-sprites-documentType-webpage;
+    }
+    &.KBAttachment{
+      @extend .coveo-sprites-documentType-attachment;
+    }
+    &.Category{
+      @extend .coveo-sprites-documentType-category;
+    }
+    &.File{
+      @extend .coveo-sprites-documentType-file;
+    }
+    &.Blog{
+      @extend .coveo-sprites-documentType-blog;
+    }
+    &.Feed {
+      @extend .coveo-sprites-documentType-rss;
+    }
+    &.YammerNetwork, &.YamemrUser, &.YammerMessage, &.YammerAttachment {
+      @extend .coveo-sprites-documentType-yammer;
+    }
+
+    // Salesforce
+    &.Account{
+      @extend .coveo-sprites-documentType-account-salesforce;
+    }
+    &.Campaign{
+      @extend .coveo-sprites-documentType-campaign;
+    }
+    &.Case{
+      @extend .coveo-sprites-documentType-case;
+    }
+    &.Contact{
+      @extend .coveo-sprites-documentType-contact;
+    }
+    &.Contract{
+      @extend .coveo-sprites-documentType-contract;
+    }
+    &.Event{
+      @extend .coveo-sprites-documentType-event;
+    }
+    &.Lead{
+      @extend .coveo-sprites-documentType-lead;
+    }
+    &.Solution{
+      @extend .coveo-sprites-documentType-answer;
+    }
+    &.Task{
+      @extend .coveo-sprites-documentType-task;
+    }
+    &.User{
+      @extend .coveo-sprites-documentType-user;
+    }
+    &.Attachment{
+      @extend .coveo-sprites-documentType-attachment;
+    }
+    &.CaseComment{
+      @extend .coveo-sprites-documentType-comment;
+    }
+    &.Opportunity{
+      @extend .coveo-sprites-documentType-opportunity;
+    }
+    &.Note {
+      @extend .coveo-sprites-documentType-note;
+    }
+    &.Partner {
+      @extend .coveo-sprites-documentType-contact;
+    }
+    &.Product {
+      @extend .coveo-sprites-documentType-product;
+    }
+  }
+}
+
+@mixin CoveoSysfiletypeIcon(){
+  &.sysfiletype {
+   @extend .coveo-sprites-documentType-default;
+
+    //FILE
+    &.aif, &.aifc, &.aiff, &.asf, &.au, &.cda, &.mid, &.midi, &.mp1, &.mp3, &.mpga, &.rmi, &.snd, &.wav, &.wma {
+      @extend .coveo-sprites-documentType-music-file;
+    }
+    &.xlam, &.xlb, &.xlm, &.xls, &.xlsm, &.xlsx, &.xltm, &.xltx {
+      @extend .coveo-sprites-documentType-spreadsheet;
+    }
+    &.asp, &.aspx, &.cgi, &.col, &.dochtml, &.dothtml, &.fphtml, &.hta, &.htm, &.html, &.jsp, &.php, &.pothtml, &.ppthtml, &.shtm, &.shtml, &.xlshtml {
+      @extend .coveo-sprites-documentType-webpage;
+    }
+    &.Image, &.ai, &.bmp, &.bw, &.cdr, &.cmx, &.cut, &.dcx, &.dib, &.drw , &.dxf , &.fpx , &.gem , &.gif , &.hgl , &.hpg , &.iff , &.img , &.jfif , &.jpe , &.jpeg , &.jpg , &.kdc , &.lbm , &.mac , &.pbm , &.pct , &.pcx , &.pdc , &.pfr , &.pgl , &.pgm , &.pic , &.png , &.ppm , &.psd , &.psp , &.ras , &.raw , &.rgb , &.rgba , &.rle , &.sgi , &.tga , &.tif , &.tiff , &.tub , &.wmf , &.wpg {
+      @extend .coveo-sprites-documentType-image;
+    }
+    &.msg , &.oft , &.email , &.eml , &.ews , &.mht , &.mhtml , &.mime  {
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.pdf  {
+      @extend .coveo-sprites-documentType-pdf;
+    }
+    &.mpp  {
+      @extend .coveo-sprites-documentType-msproject;
+    }
+    &.pot , &.potm , &.potx , &.ppam , &.pps , &.ppsm , &.ppsx , &.ppt , &.pptm , &.pptx  {
+      @extend .coveo-sprites-documentType-slideshow;
+    }
+    &.dll , &.exe  {
+      @extend .coveo-sprites-documentType-install; 
+    }
+    &.rtf , &.ascx , &.bat , &.cmd , &.config , &.csv , &.dic , &.exc , &.inf , &.ini , &.js , &.jsl , &.log , &.nfo , &.scp , &.sdl , &.sln , &.txt , &.vbdproj , &.vbs , &.vdp , &.vdproj , &.vjp , &.vjsproj , &.vjsprojdata , &.wsdl , &.wsf , &.wtx , &.xsd  {
+      @extend .coveo-sprites-documentType-text;
+    }
+    &.avi , &.m1v , &.mov , &.MOV, &.mp2, &.mp2v, &.mpa , &.mpeg , &.mpg , &.mpv2, &.qt , &.rec , &.rm , &.rnx , &.wm , &.wmv  {
+      @extend .coveo-sprites-documentType-video;
+    }
+    &.doc , &.docm , &.docx , &.dot , &.dotm , &.dotx , &.wri , &.wp , &.wpd , &.wpf  {
+      @extend .coveo-sprites-documentType-text; 
+    }
+    &.one  {
+      @extend .coveo-sprites-documentType-note;
+    }
+    &.xml , &.xsl , &.xslt  {
+      @extend .coveo-sprites-documentType-xml;
+    }
+    &.zip , &.rar , &.gz  {
+      @extend .coveo-sprites-documentType-zip;
+    }
+    &.folder {
+      @extend .coveo-sprites-documentType-folder;
+    }
+
+    //EXCHANGE
+    &.exchangemessage {
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.exchangeappointment {
+      @extend .coveo-sprites-documentType-timeline;
+    }
+    &.exchangenote {
+      @extend .coveo-sprites-documentType-note;
+    }
+    &.exchangetask {
+      @extend .coveo-sprites-documentType-task;
+    }
+    &.exchangeperson {
+      @extend .coveo-sprites-documentType-user;
+    }
+    &.activedirperson {
+      @extend .coveo-sprites-documentType-account;
+    }
+    &.exchangeactivity {
+      @extend .coveo-sprites-documentType-planned;
+    }
+    &.exchangecalendarmessage {
+      @extend .coveo-sprites-documentType-year;
+    }
+    &.exchangedocument {
+      @extend .coveo-sprites-documentType-file;
+    }
+    &.exchangedsn {
+      @extend .coveo-sprites-documentType-mail-undeliverable;
+    }
+    &.exchangefreebusy {
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.exchangegroup {
+      @extend .coveo-sprites-documentType-intranet;
+    }
+    &.exchangemdn {
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.exchangerecallmessage {
+      @extend .coveo-sprites-documentType-mail-recall;
+    }
+    &.exchangerecallreport {
+      @extend .coveo-sprites-documentType-mail-reply;
+    }
+    &.exchangeobject {
+      @extend .coveo-sprites-documentType-mail;
+    }
+    &.exchangerssfeed {
+      @extend .coveo-sprites-documentType-rss;
+    }
+    &.exchangejunkmessage {
+      @extend .coveo-sprites-documentType-mail-undeliverable;
+    }
+    &.exchangeofficecom {
+       @extend .coveo-sprites-documentType-comment;
+    }
+  }
+}
+
+.coveo-icon {
+  @include CoveoObjectTypeIcons();
+  @include CoveoSysfiletypeIcon();
+}
+
+
+.coveo-omnibox .coveo-icon, .CoveoFacet .coveo-header .coveo-icon {
+  @extend .coveo-sprites-documentType-default;
+  @include CoveoObjectTypeIcons();
+
+  &.sysauthor, &.sfownername{
+    @extend .coveo-sprites-documentType-user;    
+  }
+  &.sfopportunityforecastcategory{
+    @extend .coveo-sprites-documentType-opportunity;
+  }
+  &.sfaccountname, &.sfaccounttype{
+    @extend .coveo-sprites-documentType-account-salesforce;
+  }
+  &.sfcontactname{
+    @extend .coveo-sprites-documentType-contact;    
+  }
+  &.sfcasestatus{
+    @extend .coveo-sprites-documentType-status;    
+  }
+  &.sfcasepriority{
+    @extend .coveo-sprites-documentType-support;
+  }
+  &.sfcountry, &.sfcity {
+    @extend .coveo-sprites-documentType-city;    
+  }
+  &.sfstate{
+    @extend .coveo-sprites-documentType-city;    
+  }
+  &.sfindustry {
+    @extend .coveo-sprites-documentType-industry;
+  }
+  &.sfuserdepartment {
+    @extend .coveo-sprites-documentType-user;    
+  }
+  &.sfuserdivision {
+    @extend .coveo-sprites-documentType-manager;        
+  }
+  &.Sfopportunitystagename {
+    @extend .coveo-sprites-documentType-status;        
+  }
+  &.Sfopportunityforecastcategory {
+    @extend .coveo-sprites-documentType-category;        
+  }
+  &.sfopportunitycompetitionc {
+    @extend .coveo-sprites-documentType-competition;
+  }
+  &.sfleadsource {
+    @extend .coveo-sprites-documentType-lead;        
+  }
+  &.sfopportunityclosedquarterc {
+     @extend .coveo-sprites-documentType-year;
+  }
+  &.sfopportunitytype, &.sfopportunitystagename {
+    @extend .coveo-sprites-documentType-opportunity;
+  }
+  &.sysmailbox {
+    @extend .coveo-sprites-documentType-mail;
+  }
+  &.sysfiletype {
+    @extend .coveo-sprites-documentType-file;
+  }
+  &.sysfrom, &.sysdisplayfrom {
+    @extend .coveo-sprites-documentType-from;
+  }
+  &.systo, &.sysdisplayrecipients {
+    @extend .coveo-sprites-documentType-to;
+  }
+  &.sysyear, &.sysmonth, &.sysdate {
+    @extend .coveo-sprites-documentType-year;
+  }
+  &.sysemailfolders {
+    @extend .coveo-sprites-documentType-folder;
+  }
+  &.sysdisplayparticipants {
+    @extend .coveo-sprites-documentType-intranet;
+  }
+  &.syslanguage {
+    @extend .coveo-sprites-documentType-language;
+  }
+  &.licategoryshorttitle, &.liboardshorttitle {
+    @extend .coveo-sprites-documentType-lithium;
+  }
+  &.sysconcepts {
+    @extend .coveo-sprites-documentType-kb;
+  }
+}

@@ -1,0 +1,13 @@
+.coveo-generic-button {
+  background-color: $color-gray-background;
+  &:hover {
+    cursor: pointer;
+    background-color:white;
+    @include transition(background-color 0.25s);
+  }
+}
+
+.coveo-generic-button-no-hover-effect {
+  border: none;
+  background-color: $color-gray-background;
+}

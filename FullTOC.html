@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS/FlareStrapXSLT.css">
+    <link rel="stylesheet" href="CoveoJsSearch/css/CoveoFullSearch.css">
+    <link rel="stylesheet" href="CSS/CoveoJsSearchCustomization.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/BootstrapCustomization.css">
+
+    <script src="CoveoJsSearch/js/CoveoJsSearch.Dependencies.js"></script>
+    <script src="CoveoJsSearch/js/CoveoJsSearch.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="JSScripts/FlareStrap.js"></script>
+    <script src="RequireJS/require.js"></script>
+    <script src="JSScripts/CreateMasterTOC.js"></script>
+    <script>
+        var sourceFolder = ".";
+        createMasterToc(sourceFolder);
+    </script>
+</head>
+<body>
+    <h1>Full TOC</h1>
+    <ul id="myTOC"></ul>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.coveo-top-suggestion-header {
+	padding-left: 15px;
+	height: 35px;
+	padding-top: 9px;
+}
+
+.coveo-top-suggestion-header-icon {
+  @extend .coveo-sprites-common-star_inactive;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.coveo-top-suggestion-row {
+	height: 35px;
+  color: #0065cb;
+  padding-left: 50px;
+  padding-top:9px;
+  white-space: nowrap;
+  overflow:hidden;
+  max-width:100%;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+}

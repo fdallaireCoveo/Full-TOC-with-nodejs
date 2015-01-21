@@ -1,0 +1,29 @@
+<script id='OH_CES70EN'>
+    <div class='coveo-icon'>
+        <img src="../../Content/images/Online Help.png" />
+        <!-- <div class='coveo-sprites-documentType-how-to'></div> -->
+    </div>
+
+    <div class="CoveoFieldValue coveo-audience" data-field="@audience" data-facet="@audience"></div>
+
+    <div class='coveo-title'>
+    <a class='CoveoResultLink'><%=title?highlight(title,titleHighlights):clickUri%></a>
+    <%= loadTemplate("OH_QuickView") %>
+    </div>
+    <div class='coveo-excerpt'>
+      <%=highlight(excerpt, excerptHighlights)%>
+    </div>
+
+    <div class='coveo-tags'>
+        Tag: <span class="CoveoFieldValue" data-field="@helptopictag" data-split-values="true" data-facet="@helptopictag"/>
+    </div>
+
+</script>
+<script id="OH_QuickView">
+    <div class='CoveoQuickView' data-fixed='true' data-template-id="OH_QuickViewContent">
+    </div>
+</script>
+
+<script id="OH_QuickViewContent">
+    <div class='CoveoQuickViewDocument'></div>
+</script>

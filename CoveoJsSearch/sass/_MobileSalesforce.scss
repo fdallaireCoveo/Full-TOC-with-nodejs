@@ -1,0 +1,30 @@
+.CoveoSearchInterface .coveo-salesforce-result-mobile {
+  
+  .coveo-title {
+    margin: 10px 0px 10px 0px;
+    clear:both;
+  }
+  
+  .coveo-date {
+  	width:30%;
+  	float:right;
+  	text-align: right;
+  	padding-top: 0px;
+  }
+  
+  .coveo-badge{
+  	background-color: white;
+  	font-size: 13px;
+  	float:left;
+  }
+  
+  .CoveoFieldTable {
+  	background-color: #ececec;
+  	font-size: 14px;
+	  .CoveoCaption {
+			text-align: left;
+		}
+  }
+
+  
+}

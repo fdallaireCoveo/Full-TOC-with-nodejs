@@ -1,0 +1,18 @@
+.CoveoDidYouMean {
+  padding: 10px;
+  background-color: $color-did-you-mean-background;
+  
+  a {
+    color: $color-did-you-mean-link;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .coveo-word-correction {
+    font-style: italic;
+  }
+}

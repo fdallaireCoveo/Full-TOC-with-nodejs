@@ -1,0 +1,29 @@
+.CoveoDebug {
+}
+
+.coveo-debug {
+  @extend .coveo-modalBox.coveo-quick-view;
+}
+
+.coveo-modalBox.coveo-debug {
+	> .coveo-wrapper {
+		overflow-y: scroll;
+	}
+}
+
+.coveo-debug-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.coveo-debug-property-name, .coveo-debug-field-name {
+  font-weight: bold;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.coveo-debug-ranking-info {
+  white-space: pre;
+}

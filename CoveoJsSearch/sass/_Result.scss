@@ -1,0 +1,98 @@
+.CoveoResult {
+  position: relative;
+  border-bottom: 1px solid $color-result-border;
+  margin: 20px 0px 20px 20px;
+
+  &.coveo-omnibox-selectable {
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+  }
+
+  .highlight {
+    font-weight: bold;
+  }
+
+  .coveo-date {
+    float: right;
+    font-size: 12px;
+    margin-left: 10px;
+    padding-top: 3px;
+    color: $color-result-date;
+  }
+  
+  .coveo-icon {
+    margin: 0px 4px 0px -20px;
+    float: left;
+  }
+
+  .coveo-title {
+    display: block;
+    font-size: 16px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    
+    > * {
+      vertical-align: middle;
+    }
+
+    .CoveoResultLink {
+      margin-right: 5px;
+      display: inline;
+      overflow:hidden;
+      white-space:normal;
+    }
+
+    .CoveoResultLink:after {
+      content:'\00a0';
+      white-space:nowrap;
+      visibility: hidden;
+    }
+  }
+
+  .coveo-excerpt {
+    max-width: 600px;
+    font-size: 14px;
+    padding: 5px 0 8px 0;
+  }
+
+  @include QuickViewContainer('.coveo-title');
+
+  a {
+    @include coveo-clickable-link-inside-result;
+  }
+
+  .coveo-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: $color-result-badge-background;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .coveo-selectable-link {
+    @include coveo-clickable-link-inside-result;
+  }
+
+  .CoveoFieldValue {
+    @include coveo-clickable-field-value-inside-result;
+  }
+
+  table.CoveoFieldTable {
+   @include coveo-table-to-display-field-inside-result;
+  }
+
+  table.coveo-fields {
+    .coveo-field .coveo-label {
+        font-weight: normal;
+        background-color: $color-beige;
+    }
+  }
+
+  .CoveoResultFolding {
+    .coveo-child-result {
+      .CoveoQuickView {
+        margin-left: 5px;
+      }
+    }
+  }
+}

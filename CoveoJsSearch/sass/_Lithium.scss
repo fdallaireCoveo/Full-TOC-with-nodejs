@@ -1,0 +1,26 @@
+.CoveoSearchInterface .CoveoResult.coveo-lithium-result {
+  .coveo-icon {
+    margin-top:0px;
+  }
+  .coveo-title {
+    margin-top: 10px !important;
+  }
+
+  .coveo-excerpt .CoveoResultLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    &:hover {
+      @include coveo-result-link;
+    }
+  }
+}
+
+.coveo-lithium-result .coveo-expanded-child-result + .coveo-expanded-child-result {
+  border-top: 1px solid #cccccc;
+  padding-top: 10px;
+}
+
+.coveo-lithium-from, .coveo-lithium-to {
+  @include coveo-email-to-and-from;
+}

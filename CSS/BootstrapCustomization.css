@@ -1,0 +1,354 @@
+/* FlareStrap TEST Customization */
+
+/* .coveo-jumbotron {
+	background-image: url('../images/BinaryRain.jpg');
+	background-position: center;
+	background-repeat:no-repeat;
+	padding: 100px 0 100px 0;
+} */
+
+#ohHeader.navbar {
+	border-radius: 0;
+	min-height: 94px;
+	margin-bottom: 0;
+}
+
+#ohHeader .navbar-brand {
+    margin-left: 0;
+    padding: 15px 24px 15px 0;
+}
+
+@media (min-width: 768px){
+    #ohHeader .navbar-right {
+        width: 50%;
+    }
+}
+
+.siteSelection {
+    float:left;
+}
+
+#ohHeader.navbar-default {
+	border-top: #F58020 solid 5px;
+    /*border-bottom: 0*/;
+    border-right: 0;
+	background-color: #fff;
+}
+
+#ohHeader .navbar-header {
+    width: 100%;
+    padding: 0 10px;
+}
+
+#ohHeader.navbar-collapse {
+	padding-left: 0;
+}
+
+#ohHeader.navbar-collapse.in  {
+	padding-left: 15px;
+}
+
+#ohHeader.navbar>.container .navbar-brand {
+	margin-left: 0; /* remove -15px on logo */
+}
+
+@media (min-width: 768px){
+    .navbar-form {width: 450px;}
+}
+
+#BlackBar {
+	background-color: #333333;
+	margin-left:-5000px;
+	padding-left: 5000px;
+	margin-right:-5000px;
+	padding-right: 5015px;
+}
+
+#BlackBar .navbar-collapse.in {
+	padding-left: 1015px;
+}
+
+#BlackBar .navbar-nav>li>a {
+    color: #fff;
+    font-family: 'Proxima Nova', sans-serif;
+    padding: 9px;
+    float: left;
+}
+
+#BlackBar .navbar-nav>li>a:hover {
+	background-color: #F58020;
+    /* color: #333333; */
+}
+
+#BlackBar  .navbar-nav > .open > a {
+	background-color: #F58020;
+}
+
+#BlackBar .navbar-nav {
+    margin: 0;
+}
+
+#MainSection.container {
+  Padding: 134px 0 0 0;
+}
+
+#ohHeader .container-fluid {
+    max-width: 1200px;
+}
+
+#SearchContainer.container-fluid,
+#MainSection.container-fluid {
+    max-width: 1200px;
+    padding-top: 125px;
+}
+
+#MainSection.container .col-md-9{
+  padding-left: 0;
+}
+
+#MainSection.container .col-md-3{
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: inherit;
+}
+
+#MainSection.container .col-md-3 p.MiniTOC1_0{
+  font-weight: normal;
+  font-size: 10pt;
+  margin: 0 0 8px;
+}
+
+#SearchContainer.container .col-md-12{
+    padding-left: 30px;
+}
+
+#FixedTop {
+    padding: 20px 20px 20px 0;
+}
+
+#Sidebar,
+.affix {
+    background: #eee;
+    padding: 0 15px;
+    width: 21%;
+    /* max-height: 100%;  overflow-y: auto; */
+}
+
+#Sidebar .MCMiniTocBox_Sidebar_0 a:link
+#Sidebar .MCMiniTocBox_Sidebar_0 a:visited
+#Sidebar .MCMiniTocBox_Sidebar_0 a:hover {
+  color: #696969;
+}
+
+#MainSection.container .col-md-3 a.MiniTOC1:link {
+  color: #696969;
+  font-weight: normal;
+}
+
+#MainSection.MCMiniTocBox_Sidebar_0{
+  margin-top: 0;
+}
+
+#MainColumn {
+    padding: 0;
+}
+
+MadCap|miniTocProxy{
+    mc-auto-number-format: 'Topics in this section';
+    mc-auto-number-class: miniTocBoxTitle;
+}
+
+.MCMiniTocBox_0 {
+    margin-top: 10px;
+}
+
+.MCBreadcrumbsBox_0 {
+    color: #333333;
+    font-size: 10pt;
+    margin-bottom: 20px;
+}
+
+MadCap|breadcrumbsProxy {
+    mc-breadcrumbs-prefix: '';
+    mc-breadcrumbs-divider: '>';
+    mc-breadcrumbs-count: 5;
+    border-bottom-style: none;
+    color: #333333;
+    font-size: 10pt;
+}
+
+div.MCMiniTocBox_Sidebar_0{
+   mc-auto-number-format: 'Topics in this section';
+   mc-auto-number-class: miniTocBoxTitle;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+span.miniTocBoxTitle{
+   font-weight: normal;
+   line-height: 3.5em;
+   font-size: 1.25em;
+   Color: #333333;
+}
+
+#Sidebar .bs-docs-sidebar .hidden-print .hidden-xs .hidden-sm {
+  Padding: 15px;
+  max-width: 100%;
+}
+
+#CoveoSites {
+    background: #f7f7f7;
+    margin-top: 22px;
+    color: #333333;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#CoveoSites.navbar-nav li a {
+    padding: 8px 10px;
+}
+
+#CoveoSites img {
+    padding-right: 8px;
+}
+
+/* Accordion overwrite styles */
+
+.panel-group {
+  margin-top: 30px;
+  border-radius: 0;
+}
+
+.panel-group h4{
+  clear:both;
+}
+
+.panel-group .panel{
+  border-radius: 0;
+}
+.panel{
+  margin-top: 3px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.panel a:hover{
+  text-decoration: none !important;
+}
+
+.panel a:focus{
+  outline: 0; /* For Firefos and IE */
+}
+
+div.panel-heading:hover{
+  text-decoration: none;
+  background-color: #e6e6e6;
+}
+
+.panel-heading{
+  border-radius: 0;
+  border: 0 solid #eeeeee;
+}
+
+/* .panel-heading:hover{
+  background-color: #E6E6E6;
+} */
+
+.panel-heading .accordion-toggle:before {   
+   /* font-family: 'glyphicons halflings';  /* essential for enabling glyphicon */
+  /* content: url('../../images/Icon-AccordionExpanded2.png');     /* "\25bc" symbol for "opening" panels */
+  font-size: 20px;
+  font-weight: bold;
+  /* float: left; */
+  margin-right: 10px;
+  color: grey;
+}
+
+.panel-heading .accordion-toggle.collapsed:before {
+  /* symbol for "collapsed" panels */
+  /* content: url('../../images/Icon-AccordionCollapsed2.png');    /* "\25ba"adjust as needed, taken from bootstrap.css */
+}
+
+.panel-default{
+  border: 1px solid #eeeeee;
+  border-radius: 0;
+}
+
+.panel-collapse {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+}
+
+.panel-body {
+  padding: 15px;
+  border-top: 0 solid #dddddd;
+}
+
+.topic .panel-body  li{
+  list-style-type:none;
+  margin-left: 0;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+border-top: 0 solid #dddddd;
+}
+
+/* Carousel overwrite styles */
+
+.carousel{
+  /* margin-top: 20px; */
+}
+
+.carousel-control{
+  background-image: none !important;
+  text-shadow: none;
+  height: 70px;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next, 
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  top: 34px;
+}
+
+.carousel-control .icon-next,
+.carousel-control .icon-prev{
+  color: #b0b0b0;
+  font-family: "trebuchet ms", sans-serif;
+  font-size: 90px;
+}
+
+.carousel-inner{
+  height: 500px; /* Linked with .carousel-inner.item margin-top value */
+}
+
+.carousel-inner .item {
+  padding: 60px 0 10px 0;
+  /* line-height: 360px; /* Align the text vertically center. */
+  /* text-align: center;   */
+  /* font-family: "trebuchet ms", sans-serif;    */
+}
+
+.carousel-indicators{
+  position: relative;
+  top: 28px;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+}
+
+.carousel-indicators li{
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+  vertical-align: middle;
+  margin: 0 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}

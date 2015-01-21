@@ -1,0 +1,61 @@
+.CoveoSearchInterface .CoveoResult.coveo-email-result {
+  .coveo-title {
+    margin-top: 10px;
+  }
+
+  .coveo-excerpt .CoveoResultLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 14px;
+    &:hover {
+      @include coveo-clickable-link-inside-result;
+      &:link {
+        color: $color-result-link;
+      }
+    }
+  }
+
+  .coveo-excerpt {
+    padding-top: 6px;
+  }
+  
+  .coveo-date {
+    font-size:13px;
+    color: #999999;
+  }
+}
+.coveo-child-result {
+  @include QuickViewContainer('.coveo-email-header');
+  .coveo-email-header {
+    padding-top: 3px;
+  }
+
+}
+.coveo-email-from, .coveo-email-to {
+  @include coveo-email-to-and-from;
+}
+
+.coveo-emails-excess-collapsed, .coveo-emails-excess-expanded {
+  display: none;
+  cursor: pointer;
+  &.coveo-active {
+    display: inline;
+  }
+}
+
+.coveo-emails-excess-collapsed {
+  color: $color-result-clickable;
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+.CoveoResult, .CoveoResult:hover {
+  .coveo-email-result-top-result {
+    @include QuickViewContainer('.coveo-title');
+    > .coveo-icon.sysfiletype {
+      margin-top: 2px;
+    }
+  }
+}

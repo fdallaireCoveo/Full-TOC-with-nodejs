@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Coveo Search</title>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <script src="js/CoveoJsSearch.Dependencies.js"></script>
+  <script src="js/CoveoJsSearch.js"></script>
+  <link rel="stylesheet" href="css/CoveoFullSearch.css" />
+
+  <script type="text/javascript">
+    $(function () {
+      Coveo.Rest.SearchEndpoint.configureSampleEndpoint();
+      $('#searchBox1').coveo('initSearchBox', 'Search.html');
+      $('#searchBox2').coveo('initSearchBox', 'Search.html');
+      $('#searchBox3').coveo('initSearchBox', 'Search.html');
+      $('#searchBox4').coveo('initSearchBox', 'Search.html');
+    });
+  </script>
+</head>
+
+<body>
+  <!-- This demonstrates how to create a search box with auto-complete and/or facet selections -->
+  <div id="searchBox1">
+    <div class="CoveoSearchBox" data-activate-omnibox="true"></div>
+
+    <span class="CoveoTopFieldSuggestions"
+      data-field="@limessageauthor"
+      data-header-title="Suggested Authors"></span>
+
+    <div class="CoveoFacet" data-title="Category" data-field="@licategoryshorttitle"></div>
+    <div class="CoveoFacet" data-title="Board" data-field="@liboardshorttitle"></div>
+    <div class="CoveoFacet" data-title="Author" data-field="@sysauthor"></div>
+    <div class="CoveoFacet" data-title="Location" data-field="@liprofilelocation"></div>
+    <div class="CoveoFacet" data-title="Concepts" data-field="@sysconcepts" data-is-multi-value-field="true"></div>
+  </div>
+
+  <!-- This demonstrates how to create a simple search box without completions -->
+  <div id="searchBox2" class="CoveoSearchBox"></div>
+
+  <!-- This demonstrates how to create a simple search box with a search button -->
+  <div id="searchBox3">
+    <input class="CoveoQueryBox" type="text"/>
+    <input class="CoveoSearchButton" type="submit"/>
+  </div>
+
+  <!-- This demonstrates how to attach to a simple textbox -->
+  <input id="searchBox4" class="CoveoQueryBox" type="text"/>
+</body>
+</html>
